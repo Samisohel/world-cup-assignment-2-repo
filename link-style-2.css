@@ -36,6 +36,11 @@ body{
 .header-title{
     line-height: 80px;
 }
+.hover-btn:hover{
+    background-color: blue;
+    color:white;
+}
+
 .link-button{
     width:187px;
     height:57px;
@@ -99,14 +104,13 @@ body{
     background-color: #FFFFFF;
     border-radius: 10px;
 }
-#asid-color-btn{
-    background-color:blue;
-    color:white;
+
+
+#aside-color-btn{
+    background-color: blue;
 }
-
-#asid-color-btn a{
-    color:white;
-
+#aside-color-btn a{
+        color:white;
 }
 .aside-btn a{
     text-decoration: none;
@@ -114,47 +118,26 @@ body{
     font-weight:700;
     color:rgb(53, 51, 51);
 }
-.hover-btn:hover{
-    background-color: blue;
-    color:white;
+
+.match-shedule{
+    width:312px;
+    height:240px;
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+   
 }
-.players{
+.match-shedule img{
+    width:100px;
+    height:56px;
+}
+.match-field{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap:24px;
-    grid-row-gap:24px;
-
-}
-
-
-.player-info{
-    width:312px;
-    height:362px;
-    border: 1px solid gray;
-    border-radius: 10px;
-}
-
-.transfer-btn{
-    width:100px;
-    height:32px;
-    font-size: 16px;
-    margin-top:20px;
-    margin-left: 15px;
-    border-radius:5px;
-    background-color: white;
-    border: 2px solid  #302f2f;;
-}
-.blog-info{
-    padding-left: 15px;
-    font-size: 18px;
-    color:rgb(51, 47, 47);
-}
-span{
-    margin-right: 20px;
-    padding-left: 20px;
-    font-size: 16px;
-    font-weight: 100;
-    color: rgb(51, 49, 49);
+    grid-row-gap:20px;
+    grid-column-gap:20px;
 }
 
 /* ------
@@ -246,7 +229,6 @@ hr{
         }
        .top-banner .half-width2 img{
             width:400px;
-            
             margin-left: 20px;
            
        }
@@ -270,23 +252,25 @@ hr{
             grid-template-columns: repeat(1, 1fr);
             flex-direction: column;
         }
-        .players{
+        
+        .match-field{
             width:100%;
-            margin-left:220px;
             grid-template-columns: repeat(1, 1fr);
+            margin-left: 220px;
         }
         .footer{
-            width:880px;
+            width:100%;
         }
         .footer-manu{
             width:auto;
             display: flex;
             line-height: 35px;
-            padding-left: 20px;
+            padding-left: 40px;
             grid-template-columns: repeat(1, 1fr);
             flex-direction: column;
           
         }
+        
 
 }
 
@@ -331,7 +315,7 @@ hr{
                 header-section end
                                 ----- */
         .aside-button{
-            width:800px;
+            width:750px;
             height:176px;
             display:flex;
             grid-template-rows: repeat(1, 1fr);
@@ -343,7 +327,7 @@ hr{
        
         .aside-btn{
             border:1px solid gray;
-            margin-right: 50px;
+            margin-left: 50px;
             
         }
         .card-players{
@@ -352,7 +336,7 @@ hr{
             grid-template-columns: repeat(1, 1fr);
             flex-direction: column;
         }
-        .players{
+        .match-field{
             width:100%;
             margin-left: 40px;
             column-gap:0px;
